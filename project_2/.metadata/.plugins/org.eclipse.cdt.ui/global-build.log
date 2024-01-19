@@ -1,0 +1,23 @@
+Nothing to build in platform 'design_1_wrapper'
+
+10:05:00 **** Incremental Build of configuration Debug for project lcd ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/benfetima/Desktop/DID/LCD/project_2/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lcd.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/benfetima/Desktop/DID/LCD/project_2/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lcd.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lcd.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lcd.elf  |tee "lcd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3232	    292	   3132	   6656	   1a00	lcd.elf
+'Finished building: lcd.elf.size'
+' '
+10:05:02 **** Incremental Build of configuration Debug for project lcd_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

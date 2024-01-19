@@ -1,0 +1,524 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 23136
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Jan 17 10:19:55 CET 2024
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	benfetima
+User home directory: C:/Users/benfetima
+User working directory: C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11
+User country: 	FR
+User language: 	fr
+User locale: 	fr_FR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/vivado.log
+Vivado journal file: 	C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/vivado.jou
+Engine tmp dir: 	C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/.Xil/Vivado-23136-llr21010
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_SDK: C:/Xilinx/Vitis/2021.2
+XILINX_VITIS: C:/Xilinx/Vitis/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	333 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,561 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 74 MB (+75279kb) [00:00:03]
+// [Engine Memory]: 1,561 MB (+1485376kb) [00:00:03]
+// Opening Vivado Project: C:\Users\benfetima\Desktop\DID\LCD\LCD_DORIGINE\project_22_11\project_22_11.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+22119kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  2466 ms.
+// Tcl Message: open_project C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15904-llr21010/PrjAr/_X_' since last save. INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/../My_IPs/Horloge_LCD_IP'; using path 'C:/Users/benfetima/My_IPs/Horloge_LCD_IP' instead. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/benfetima/My_IPs/Horloge_LCD_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// [GUI Memory]: 120 MB (+17129kb) [00:00:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,561 MB. GUI used memory: 66 MB. Current time: 1/17/24, 10:19:58 AM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 1566.984 ; gain = 0.000 
+// Project name: project_22_11; location: C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11; part: xc7k325tffg900-2
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1184 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("TEMPLATE_LCD.vhd", 61, 300); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 106, 123); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 106, 123, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 106, 123); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 97, 108); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 198, 108); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 198, 108, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 198, 108); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 57, 150); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 53, 146); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 50, 147); // be
+// Elapsed time: 14 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 55, 341); // be
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd), your_instance_name : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/ip/clk_wiz_0_5/clk_wiz_0.xci] -no_script -reset -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// [GUI Memory]: 131 MB (+4498kb) [00:01:39]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: remove_files  -fileset clk_wiz_0 C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/ip/clk_wiz_0_5/clk_wiz_0.xci 
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/ip/clk_wiz_0_5/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'. 
+dismissDialog("Remove Sources"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd), your_instance_name : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// [GUI Memory]: 144 MB (+7147kb) [00:01:44]
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: remove_files  C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/ip/clk_wiz_0_5/clk_wiz_0.xci 
+// Tcl Message: file delete -force C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/ip/clk_wiz_0_5/clk_wiz_0.xci 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Text]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cons_LCD.xdc]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cons_LCD.xdc]", 7, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1178 ms.
+dismissDialog("Opening Editor"); // bA
+// Elapsed time: 10 seconds
+selectCodeEditor("cons_LCD.xdc", 337, 131); // be
+selectCodeEditor("cons_LCD.xdc", 352, 113); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("cons_LCD.xdc", 185, 357); // be
+selectCodeEditor("cons_LCD.xdc", 212, 487); // be
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, cons_LCD.xdc]", 7, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/constrs_1/imports/new/cons_LCD.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/constrs_1/imports/new/cons_LCD.xdc 
+// Tcl Message: file delete -force C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/constrs_1/imports/new/cons_LCD.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd), your_instance_name : xil_defaultlib.clk_wiz_0]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd), your_instance_name : xil_defaultlib.clk_wiz_0]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 3, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 4, false, false, false, false, false, true); // D - Double Click
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::open_ipxact_file {C:\Users\benfetima\Desktop\DID\LCD\LCD_DORIGINE\project_22_11\project_22_11.srcs\sources_1\imports\Horloge_LCD_IP\component.xml} 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Open IP-XACT File"); // bA
+dismissDialog("Critical Messages"); // a
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 4, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/imports/Horloge_LCD_IP/component.xml] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/imports/Horloge_LCD_IP/component.xml 
+// Tcl Message: file delete -force C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/imports/Horloge_LCD_IP/component.xml 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT, component.xml]", 4, false, false, false, false, false, true); // D - Double Click
+selectButton(PAResourceOtoP.OpenFileAction_CANCEL, "Cancel"); // a
+dismissDialog("Unable to Open File"); // ag
+// TclEventType: PACKAGER_UNLOAD_CORE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - TEMPLATE_LCD"); // ac
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - TEMPLATE_LCD"); // ac
+// Tcl Message: ipx::unload_core c:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.srcs/sources_1/imports/Horloge_LCD_IP/component.xml 
+// [GUI Memory]: 152 MB (+911kb) [00:03:01]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 4, false); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEMPLATE_LCD(Behavioral) (TEMPLATE_LCD.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Opening Editor"); // bA
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectCodeEditor("TEMPLATE_LCD.vhd", 112, 366); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 112, 366, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 216, 451); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 142, 426); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 1, 397); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 582, 453); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 220, 266); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 138, 264); // be
+// Elapsed time: 13 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 61, 267); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 61, 195); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 61, 181); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 62, 165); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 61, 146); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 667, 151); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 607, 132); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 577, 128); // be
+// Elapsed time: 32 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 391, 393); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 94, 368); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 251, 426); // be
+// Elapsed time: 141 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 605, 124); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 605, 124, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 28, 132); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 21, 420); // be
+// Elapsed time: 11 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 521, 689); // be
+// Elapsed time: 150 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 52, 285); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 111, 280); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 216, 282); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 324, 282); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 419, 282); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 509, 279); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 600, 281); // be
+// Elapsed time: 18 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 59, 474); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 216, 636); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 33, 201); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 47, 178); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 83, 195); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 83, 195, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 106, 198); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("TEMPLATE_LCD.vhd", 166, 198); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 209, 213); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 207, 225); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 209, 240); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 205, 261); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 200, 280); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 149, 263); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 148, 262, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 158, 266); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 155, 266, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 59, 218); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 20, 198, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 57, 229, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 55, 242, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 54, 260, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 50, 285, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 25, 190); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 104, 198); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 105, 198, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 57, 198, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 102, 214, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 102, 214, false, true, false, false, true); // be - Control Key - Double Click
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 54, 208, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 113, 232, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 113, 232, false, true, false, false, true); // be - Control Key - Double Click
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 42, 229, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 98, 247, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 98, 247, false, true, false, false, true); // be - Control Key - Double Click
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 41, 254, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 89, 260, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 90, 260, false, true, false, false, true); // be - Control Key - Double Click
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 47, 255, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 87, 282, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 87, 282, false, true, false, false, true); // be - Control Key - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 100, 281, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 100, 281, false, true, false, false, true); // be - Control Key - Double Click
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 32, 279, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 57, 261); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 57, 215); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 55, 201); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 48, 180); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 139, 197, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 134, 214, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 142, 228, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+// [GUI Memory]: 161 MB (+1303kb) [00:13:12]
+selectCodeEditor("TEMPLATE_LCD.vhd", 138, 248, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 127, 264, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 140, 281, false, true, false, false, false); // be - Control Key
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 106, 194); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 118, 238); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 103, 219); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 105, 229); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 103, 244); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 100, 261); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 99, 279); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 349, 198); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 343, 217); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 366, 234); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 363, 246); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 325, 267); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 329, 282); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 93, 192); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 639, 235); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 639, 235, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 51, 186); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 51, 186, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 51, 186); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 141, 212); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 145, 234); // be
+// Elapsed time: 39 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 109, 176); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 76, 187); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 112, 193); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 109, 230); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 104, 242); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 96, 262); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 102, 263); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 640, 129); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 640, 129, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 425, 276); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 339, 129); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 340, 129); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 330, 144); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 334, 161); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 329, 183); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 314, 196); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 310, 216); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 329, 215); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 155, 257); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 233, 334); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 182, 334); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 182, 334, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 182, 334); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 230, 330); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 134, 352); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 134, 352, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 173, 355); // be
+// Elapsed time: 63 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 114, 355); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 114, 355, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 114, 355); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 59, 349); // be
+// Elapsed time: 38 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 266, 194); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 119, 226); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 170, 234); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 170, 235, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 170, 235); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'c'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 146, 247); // be
+typeControlKey((HResource) null, "TEMPLATE_LCD.vhd", 'v'); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 30, 227); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 181, 250); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 278, 244); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 379, 245); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 471, 247); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 553, 244); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 634, 249); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 368, 443); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 45, 334); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 3, 333); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 4, 371); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 22, 346); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 15, 378); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 5, 346, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 1, 183); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 14, 346); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 23, 343); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 13, 349, false, true, false, false, false); // be - Control Key
+selectCodeEditor("TEMPLATE_LCD.vhd", 212, 339); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 15, 176); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 47, 283); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 91, 298); // be
+// Elapsed time: 27 seconds
+selectCodeEditor("TEMPLATE_LCD.vhd", 235, 249); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 209, 243); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 466, 276); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 529, 465); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 144, 268); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 144, 268, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 208, 267); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 113, 262); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 159, 285); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 159, 285, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 120, 282); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 201, 281); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 151, 302); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 151, 302, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 108, 303); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 200, 293); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 157, 311); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 157, 311, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 102, 317); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 178, 312); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 173, 306); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 130, 328); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 130, 328, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 201, 332); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 116, 332); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 168, 314); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 182, 300); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 446, 361); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 457, 359); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 462, 343); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 462, 343, false, false, false, false, true); // be - Double Click
+selectCodeEditor("TEMPLATE_LCD.vhd", 462, 343); // be
+selectCodeEditor("TEMPLATE_LCD.vhd", 445, 365); // be
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // al
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY

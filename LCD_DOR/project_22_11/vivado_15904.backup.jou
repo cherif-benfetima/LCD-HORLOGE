@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Dec 21 11:09:56 2023
+# Process ID: 15904
+# Current directory: C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15268
+# Log file: C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: llr21010, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 68428 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/benfetima/Proj22_UPDATED/project_22_11/project_22_11.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/Users/benfetima/My_IPs/Horloge_LCD_IP -vendor in2p3.fr -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/benfetima/My_IPs/Horloge_LCD_IP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/benfetima/My_IPs/Horloge_LCD_IP c:/Users/benfetima/My_IPs/Horloge_LCD_IP/component.xml
+current_project project_22_11
+set_property display_name Horloge_LCD [ipx::current_core]
+set_property description Horloge_LCD_v1_0 [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project tmp_edit_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  c:/Users/benfetima/My_IPs/Horloge_LCD_IP [current_project]
+update_ip_catalog
+close_project
+open_project C:/Users/benfetima/test_ip0/test_ip0.xpr
+update_compile_order -fileset sources_1
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {c:/Users/benfetima/project_22_11/ip_test C:/Users/benfetima/My_IPs/Horloge_LCD_IP} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  c:/Users/benfetima/project_22_11/ip_test [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {c:/Users/benfetima/project_22_11/ip_test C:/Users/benfetima/My_IPs/Horloge_LCD_IP} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  c:/Users/benfetima/My_IPs/Horloge_LCD_IP [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  C:/Users/benfetima/My_IPs/Horloge_LCD_IP [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv in2p3.fr:user:TEMPLATE_LCD:1.0 TEMPLATE_LCD_0
+endgroup
+close_project
+open_project C:/Users/benfetima/Proj22_UPDATED/project_22_11/project_22_11.xpr
+update_compile_order -fileset sources_1
+archive_project W:/Partage_LHCB/KCU_705/LCD/Horloge_LCD.xpr.zip -temp_dir C:/Users/benfetima/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15904-llr21010 -force -include_local_ip_cache

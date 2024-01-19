@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TEMPLATE_LCD_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TEMPLATE_LCD_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="39.781335 us"></ZoomStartTime>
+      <ZoomEndTime time="861.781336 us"></ZoomEndTime>
+      <Cursor1Time time="646.871900 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="144"></NameColumnWidth>
+      <ValueColumnWidth column_width="65"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/TEMPLATE_LCD_TB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider100">
+      <obj_property name="label">clocks </obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/i2" type="other">
+      <obj_property name="ElementShortName">i2</obj_property>
+      <obj_property name="ObjectShortName">i2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/i3" type="other">
+      <obj_property name="ElementShortName">i3</obj_property>
+      <obj_property name="ObjectShortName">i3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/i4" type="other">
+      <obj_property name="ElementShortName">i4</obj_property>
+      <obj_property name="ObjectShortName">i4</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider101">
+      <obj_property name="label">Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/LCD_RS" type="logic">
+      <obj_property name="ElementShortName">LCD_RS</obj_property>
+      <obj_property name="ObjectShortName">LCD_RS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/LCD_RW" type="logic">
+      <obj_property name="ElementShortName">LCD_RW</obj_property>
+      <obj_property name="ObjectShortName">LCD_RW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/init_init" type="logic">
+      <obj_property name="ElementShortName">init_init</obj_property>
+      <obj_property name="ObjectShortName">init_init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/tx_init" type="logic">
+      <obj_property name="ElementShortName">tx_init</obj_property>
+      <obj_property name="ObjectShortName">tx_init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/clk_cnt" type="logic">
+      <obj_property name="ElementShortName">clk_cnt</obj_property>
+      <obj_property name="ObjectShortName">clk_cnt</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider30">
+      <obj_property name="label">LCD_E</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/LCD_E0" type="logic">
+      <obj_property name="ElementShortName">LCD_E0</obj_property>
+      <obj_property name="ObjectShortName">LCD_E0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/LCD_E1" type="logic">
+      <obj_property name="ElementShortName">LCD_E1</obj_property>
+      <obj_property name="ObjectShortName">LCD_E1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/LCD_E" type="logic">
+      <obj_property name="ElementShortName">LCD_E</obj_property>
+      <obj_property name="ObjectShortName">LCD_E</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider19">
+      <obj_property name="label">POWER INIT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">POWER INIT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/init_state" type="other">
+         <obj_property name="ElementShortName">init_state</obj_property>
+         <obj_property name="ObjectShortName">init_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/init_done" type="logic">
+         <obj_property name="ElementShortName">init_done</obj_property>
+         <obj_property name="ObjectShortName">init_done</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider22">
+      <obj_property name="label">Timing Const</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/tx_state" type="other">
+      <obj_property name="ElementShortName">tx_state</obj_property>
+      <obj_property name="ObjectShortName">tx_state</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider21">
+      <obj_property name="label">Display state</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/cur_state" type="other">
+      <obj_property name="ElementShortName">cur_state</obj_property>
+      <obj_property name="ObjectShortName">cur_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/tx_byte" type="array">
+      <obj_property name="ElementShortName">tx_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider29">
+      <obj_property name="label">SF[3:0]</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/SF_D0" type="array">
+      <obj_property name="ElementShortName">SF_D0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SF_D0[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/SF_D1" type="array">
+      <obj_property name="ElementShortName">SF_D1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SF_D1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/SF_D" type="array">
+      <obj_property name="ElementShortName">SF_D[3:0]</obj_property>
+      <obj_property name="ObjectShortName">SF_D[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider138">
+      <obj_property name="label">HORL</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/seconds_LSB" type="array">
+      <obj_property name="ElementShortName">seconds_LSB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">seconds_LSB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/seconds_MSB" type="array">
+      <obj_property name="ElementShortName">seconds_MSB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">seconds_MSB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/minutes_LSB" type="array">
+      <obj_property name="ElementShortName">minutes_LSB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">minutes_LSB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TEMPLATE_LCD_TB/UUT/minutes_MSB" type="array">
+      <obj_property name="ElementShortName">minutes_MSB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">minutes_MSB[3:0]</obj_property>
+   </wvobject>
+</wave_config>

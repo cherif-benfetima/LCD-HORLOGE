@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "xparameters.h"
+#include "sleep.h"
+
+
+    XGpio LCD ;
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+    print("Program Started\n\r");
+
+
+
+    XGpio_Initialize(&LCD, XPAR_AXI_GPIO_0_DEVICE_ID);
+    XGpio_SetDataDirection(&LCD, 1, 0x0);
+
+
+
+    XGpio_DiscreteWrite(&LCD,1,0x0);
+
+   //sleep(20000);
+
+    cleanup_platform();
+    return 0;
+}

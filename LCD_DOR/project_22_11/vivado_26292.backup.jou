@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Jan 17 10:40:14 2024
+# Process ID: 26292
+# Current directory: C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19000 C:\Users\benfetima\Desktop\DID\LCD\LCD_DORIGINE\project_22_11\project_22_11.xpr
+# Log file: C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/vivado.log
+# Journal file: C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11\vivado.jou
+# Running On: llr21010, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 68428 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/project_22_11/project_22_11.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::package_project -root_dir C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE -vendor in2p3.fr -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core c:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE c:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE/component.xml
+update_compile_order -fileset sources_1
+set_property display_name LCD_Horlogege_reg [ipx::current_core]
+set_property description LCD_Horlogege_reg [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE c:/Users/benfetima/My_IPs/Horloge_LCD_IP} [current_project]
+update_ip_catalog

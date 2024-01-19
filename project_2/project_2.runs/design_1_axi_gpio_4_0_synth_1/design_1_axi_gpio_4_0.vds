@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Jan 17 11:10:31 2024
+# Process ID: 192
+# Current directory: C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/design_1_axi_gpio_4_0_synth_1
+# Command line: vivado.exe -log design_1_axi_gpio_4_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_4_0.tcl
+# Log file: C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/design_1_axi_gpio_4_0_synth_1/design_1_axi_gpio_4_0.vds
+# Journal file: C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/design_1_axi_gpio_4_0_synth_1\vivado.jou
+# Running On: llr21010, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 68428 MB
+#-----------------------------------------------------------
+source design_1_axi_gpio_4_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_4_0, cache-ID = 6acf94cffb2ecb60.
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 17 11:10:44 2024...

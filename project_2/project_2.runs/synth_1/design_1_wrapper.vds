@@ -1,0 +1,453 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Jan 17 13:49:03 2024
+# Process ID: 33480
+# Current directory: C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1\vivado.jou
+# Running On: llr21010, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 8, Host memory: 68428 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/benfetima/Desktop/DID/LCD/LCD_DORIGINE/HORLOGE_REGLABLE24'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32972
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1566.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:29]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:2728' bound to instance 'design_1_i' of component 'design_1' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:2747]
+INFO: [Synth 8-3491] module 'design_1_HORLOGE24_0_1' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_HORLOGE24_0_1_stub.vhdl:5' bound to instance 'HORLOGE24_0' of component 'design_1_HORLOGE24_0_1' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3284]
+INFO: [Synth 8-638] synthesizing module 'design_1_HORLOGE24_0_1' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_HORLOGE24_0_1_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3299]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_1_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3322]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_1_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_2_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_2_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3345]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_2_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_2_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_3_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_3' of component 'design_1_axi_gpio_3_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3368]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_3_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_3_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_4_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_4_0_stub.vhdl:5' bound to instance 'axi_gpio_4' of component 'design_1_axi_gpio_4_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3391]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_4_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_4_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_5_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_5_0_stub.vhdl:5' bound to instance 'axi_gpio_5' of component 'design_1_axi_gpio_5_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3414]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_5_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_5_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_6_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_6_0_stub.vhdl:5' bound to instance 'axi_gpio_6' of component 'design_1_axi_gpio_6_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3437]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_6_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_gpio_6_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3460]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3485]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3493]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3506]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1671]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (1#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (2#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (3#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:360]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (4#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:360]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:461]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (5#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:461]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:562]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (6#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:562]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (7#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:663]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1YO2N20' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:764]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1YO2N20' (8#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:764]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1427]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (9#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1427]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:2561]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (10#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1671]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:848]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1062]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1116]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1144]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1198]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:1226]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (11#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:848]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:3763]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/.Xil/Vivado-33480-llr21010/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (12#1) [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/synth/design_1.vhd:2747]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (13#1) [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:29]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m07_couplers_imp_1YO2N20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m07_couplers_imp_1YO2N20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m07_couplers_imp_1YO2N20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m07_couplers_imp_1YO2N20 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m06_couplers_imp_4YOIXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m06_couplers_imp_4YOIXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m06_couplers_imp_4YOIXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m06_couplers_imp_4YOIXL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m05_couplers_imp_1XR4ZAZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m05_couplers_imp_1XR4ZAZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m05_couplers_imp_1XR4ZAZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m05_couplers_imp_1XR4ZAZ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_5LX7BU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_1W07O72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_7ANRHB is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1UTB3Y5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1572.281 ; gain = 5.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1572.281 ; gain = 5.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1572.281 ; gain = 5.742
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1572.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_2'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_2_0/design_1_axi_gpio_2_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_2'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_3_0/design_1_axi_gpio_3_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_HORLOGE24_0_1/design_1_HORLOGE24_0_1/design_1_HORLOGE24_0_1_in_context.xdc] for cell 'design_1_i/HORLOGE24_0'
+Finished Parsing XDC File [c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_HORLOGE24_0_1/design_1_HORLOGE24_0_1/design_1_HORLOGE24_0_1_in_context.xdc] for cell 'design_1_i/HORLOGE24_0'
+Parsing XDC File [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/constrs_1/new/my_xdc.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk'. [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/constrs_1/new/my_xdc.xdc:9]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/constrs_1/new/my_xdc.xdc:9]
+Finished Parsing XDC File [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/constrs_1/new/my_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/constrs_1/new/my_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.srcs/constrs_1/new/my_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1594.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1594.059 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1601.711 ; gain = 35.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1601.711 ; gain = 35.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_n. (constraint file  c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_diff_clock_clk_p. (constraint file  c:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_in_context.xdc, line 7).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/HORLOGE24_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1601.711 ; gain = 35.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1601.711 ; gain = 35.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M07_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1601.711 ; gain = 35.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1611.219 ; gain = 44.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1611.742 ; gain = 45.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1630.844 ; gain = 64.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |design_1_xbar_0               |         1|
+|2     |design_1_HORLOGE24_0_1        |         1|
+|3     |design_1_axi_gpio_0_0         |         1|
+|4     |design_1_axi_gpio_1_0         |         1|
+|5     |design_1_axi_gpio_2_0         |         1|
+|6     |design_1_axi_gpio_3_0         |         1|
+|7     |design_1_axi_gpio_4_0         |         1|
+|8     |design_1_axi_gpio_5_0         |         1|
+|9     |design_1_axi_gpio_6_0         |         1|
+|10    |design_1_axi_uartlite_0_0     |         1|
+|11    |design_1_clk_wiz_1_0          |         1|
+|12    |design_1_mdm_1_0              |         1|
+|13    |design_1_microblaze_0_0       |         1|
+|14    |design_1_rst_clk_wiz_1_100M_0 |         1|
+|15    |design_1_dlmb_bram_if_cntlr_0 |         1|
+|16    |design_1_dlmb_v10_0           |         1|
+|17    |design_1_ilmb_bram_if_cntlr_0 |         1|
+|18    |design_1_ilmb_v10_0           |         1|
+|19    |design_1_lmb_bram_0           |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |design_1_HORLOGE24_0_1_bbox        |     1|
+|2     |design_1_axi_gpio_0_0_bbox         |     1|
+|3     |design_1_axi_gpio_1_0_bbox         |     1|
+|4     |design_1_axi_gpio_2_0_bbox         |     1|
+|5     |design_1_axi_gpio_3_0_bbox         |     1|
+|6     |design_1_axi_gpio_4_0_bbox         |     1|
+|7     |design_1_axi_gpio_5_0_bbox         |     1|
+|8     |design_1_axi_gpio_6_0_bbox         |     1|
+|9     |design_1_axi_uartlite_0_0_bbox     |     1|
+|10    |design_1_clk_wiz_1_0_bbox          |     1|
+|11    |design_1_dlmb_bram_if_cntlr_0_bbox |     1|
+|12    |design_1_dlmb_v10_0_bbox           |     1|
+|13    |design_1_ilmb_bram_if_cntlr_0_bbox |     1|
+|14    |design_1_ilmb_v10_0_bbox           |     1|
+|15    |design_1_lmb_bram_0_bbox           |     1|
+|16    |design_1_mdm_1_0_bbox              |     1|
+|17    |design_1_microblaze_0_0_bbox       |     1|
+|18    |design_1_rst_clk_wiz_1_100M_0_bbox |     1|
+|19    |design_1_xbar_0_bbox               |     1|
+|20    |IBUF                               |     2|
+|21    |OBUF                               |     9|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1637.566 ; gain = 41.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1637.566 ; gain = 71.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1649.617 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1665.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d197882e
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 78 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1665.559 ; gain = 99.020
+INFO: [Common 17-1381] The checkpoint 'C:/Users/benfetima/Desktop/DID/LCD/project_2/project_2.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 17 13:49:44 2024...
