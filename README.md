@@ -1,0 +1,1 @@
+Ce repository présente le développement d'un projet visant à afficher une horloge sur l’ LCD 16x2 de la carte FPGA Kintex-7 KC705 et une approche de conception combinant le langage VHDL et le processeur MicroBlaze.
